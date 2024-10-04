@@ -8,6 +8,11 @@ Un sótano para todos los fanes de las armas
 
 Mira **[Mi perfil](https://github.com/IsaacRamosDaw)** para más de mis trabajos.
 
+## Dependencias
+* Sequalize
+* mysql
+* cors
+
 ## Despliegue 📦
 
 Tras hacer el pull, abrir la caja de comandos y escribir
