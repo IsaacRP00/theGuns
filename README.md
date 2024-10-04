@@ -27,7 +27,7 @@ Tras hacer el pull, abrir la caja de comandos y escribir
 * [IONIC](https://ionicframework.com/) - Manejador de dependencias
 * [MYSQL](https://www.mysql.com) - Usado para generar RSS
 * [Sara](https://github.com/scsoares/scsoares) 
-* [Mansour]((https://github.com/mansulol/mansulol)) 
+* [Mansour](https://github.com/mansulol/mansulol) 
 
 ## Postman
 [POSTMAN](https://www.postman.com/isaac00/workspace/thegunsisaacramospostman/request/38432310-fc8c4ed3-1304-4bab-bd13-2296a1aeb796?action=share&creator=38432310&ctx=documentation)
