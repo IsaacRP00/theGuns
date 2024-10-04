@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Create Gun</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="gunFormGroup" (ngSubmit)="addGun()">
+
+    <ion-list>
+      <ion-item>
+        <ion-input formControlName="name" type="name" fill="solid" label="Name of the weapon"
+          labelPlacement="floating"></ion-input>
+      </ion-item>
+
+      <ion-radio-group formControlName="type">
+        <ion-label>Type</ion-label>
+        <ion-item *ngFor="let s of type">
+          <ion-radio>{{ s.name }}</ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+      <ion-label>Ammo</ion-label>
+      <ion-item>
+        <ion-select formControlName="caliber" label="Caliber type">
+          <ion-select-option value="7.76">7.76</ion-select-option>
+          <ion-select-option value="10.01">10.01</ion-select-option>
+          <ion-select-option value="9mm">9mm</ion-select-option>
+          <ion-select-option value="50">50</ion-select-option>
+          <ion-select-option value="70">70</ion-select-option>
+          <ion-select-option value="16">16</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-label>Country</ion-label>
+      <ion-item>
+        <ion-input formControlName="country" label="Which country created it?" placeholder="Spain"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" color="warning" type="submit">Create</ion-button>
+  </form>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="goToHome()"> Go Back </ion-button>
+  </ion-toolbar>
+</ion-footer>

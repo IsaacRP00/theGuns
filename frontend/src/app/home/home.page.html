@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>The gun Lecture</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div class="welcome-container">
+    <h1 class="title">Welcome to the Guns</h1>
+
+    <div class="highlight-section">
+      <h3>Here? you will found a list of secret weapons that the elites dont want you know about</h3>
+    </div>
+  </div>
+  <img src="../../assets/img/logo.png" alt="">
+</ion-content>
+
+
+<ion-footer>
+  <ion-button expand="block" color="danger" (click)="goToMyGuns()"> See all guns </ion-button> 
+  <ion-button expand="block" (click)="goToCreateGuns()"> Create a gun </ion-button> 
+  <ion-toolbar class="name">
+    <h2>Hello {{name}}!!</h2>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+

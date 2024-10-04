@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true" class="backGround">
+	<div class="flex-center">
+		<ion-card>
+			<ion-card-header>
+				<ion-card-title>The Guns</ion-card-title>
+			</ion-card-header>
+			
+			<ion-card-content>
+					<ion-input label="Name" labelPlacement="floating" [(ngModel)]="name"></ion-input>
+					<ion-input label="Password" labelPlacement="floating" type="password"></ion-input>
+			</ion-card-content>
+			
+			<ion-button expand="block" color="danger" (click)="saveName(); goToHome()"> Login </ion-button> 
+		</ion-card>
+	</div>
+</ion-content>

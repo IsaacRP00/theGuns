@@ -1,0 +1,39 @@
+.gun-card {
+  margin-bottom: 15px;
+}
+
+.gun-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #cab600;
+}
+
+.gun-country {
+  font-size: 1.2rem;
+  color: #e7e7e7;
+  margin-top: 0.3rem;
+}
+
+.gunDetails {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #f3f3f3;
+  strong{
+    color: gray;
+  }
+}
+
+ion-button {
+  margin-top: 10px;
+}
+
+.card-number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: #000000;
+  color: white;
+  border-radius: 25%;
+}

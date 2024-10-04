@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>All guns</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let s of guns" class="gun-card">
+    <ion-badge color="tertiary" class="card-number">{{s.id}}</ion-badge>
+    <ion-card-header>
+      <ion-card-title class="gun-name">{{ s.name }}</ion-card-title>
+      <ion-card-subtitle class="gun-country">{{ s.country }}</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <div class="gunDetails">
+        <p><strong>Caliber:</strong> {{ s.caliber }}</p>
+        <p><strong>Type:</strong> {{ s.type }}</p>
+      </div>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-button color="danger" expand="block" (click)="deleteGun(s.id)">Eliminar</ion-button>
+      <ion-button color="primary" expand="block" (click)="goToUpdateGuns(s.id)">Actualizar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="goToHome()"> Go back </ion-button> 
+  </ion-toolbar>
+</ion-footer>
